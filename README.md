@@ -1,2 +1,2 @@
 # Pytorch_Diabetes
-logistic classification with diabetes data
+Pytorch / Logistic Classifier 를 사용하여 당뇨병 예측
