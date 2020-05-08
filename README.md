@@ -17,18 +17,18 @@ Kaggle - Me : https://www.kaggle.com/coolfamily77
    epoch = 50001 만큼 학습하였습니다.<br>
    
 **[4] 데이터 예측**<br>
- > hypothesis = torch.sigmoid(x_train.matmul(w) + b) # or .mm or @
-   #print(hypothesis)
+ > hypothesis = torch.sigmoid(x_train.matmul(w) + b) # or .mm or @<br>
+   #print(hypothesis)<br>
 
-   prediction = hypothesis >= torch.FloatTensor([0.5])
-   #print(prediction)
-   #print(y_train)
+   prediction = hypothesis >= torch.FloatTensor([0.5])<br>
+   #print(prediction)<br>
+   #print(y_train)<br>
+   correct_prediction = prediction.float() == y_train<br>
+   #print(correct_prediction)<br>
+
+   accuracy = correct_prediction.sum().item() / len(correct_prediction)<br>
+   print('The model has an accuracy of {:2.2f}% for the training set.'.format(accuracy * 100))<br>
 
    # 정확도 계산 
-   correct_prediction = prediction.float() == y_train
-   #print(correct_prediction)
-
-   accuracy = correct_prediction.sum().item() / len(correct_prediction)
-   print('The model has an accuracy of {:2.2f}% for the training set.'.format(accuracy * 100))
    
    > The model has an accuracy of 77.15% for the training set.
