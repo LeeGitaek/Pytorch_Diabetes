@@ -24,4 +24,4 @@ Kaggle - Me : https://www.kaggle.com/coolfamily77
 
    # 정확도 계산 
    
-   >  print('The model has an accuracy of {:2.2f}% for the training set.'.format(accuracy * 100))        >  The model has an accuracy of 77.15% for the training set.
+   >  print('The model has an accuracy of {:2.2f}% for the training set.'.format(accuracy * 100))<br>    >  The model has an accuracy of 77.15% for the training set.
